@@ -1,0 +1,44 @@
+From: Microsoft 365 Security <security-alert@example.com>
+To: analyst@company.example
+Subject: Urgent: Verify Your Microsoft 365 Account
+Date: Sat, 16 Aug 2026 09:42:17 +0000
+Reply-To: microsoft-security@example.net
+Return-Path: <bounce@example.com>
+Message-ID: <20260816094217.12345@example.com>
+
+Received: from mail.example.com (mail.example.com [192.0.2.10])
+    by mx.company.example with ESMTPS id ABC123
+    for <analyst@company.example>;
+    Sat, 16 Aug 2026 09:42:18 +0000
+
+Received: from workstation.example.net (workstation.example.net [198.51.100.25])
+    by mail.example.com with ESMTP id XYZ789;
+    Sat, 16 Aug 2026 09:42:17 +0000
+
+Authentication-Results: mx.company.example;
+    spf=fail smtp.mailfrom=example.com;
+    dkim=fail header.d=example.com;
+    dmarc=fail header.from=example.com
+
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+<p>Hello,</p>
+
+<p>We detected unusual activity on your Microsoft 365 account.</p>
+
+<p>To prevent temporary suspension, please verify your account immediately:</p>
+
+<p>
+<a href="https://login.microsoftonline.com.security-verify.example/login">
+Verify Microsoft 365 Account
+</a>
+</p>
+
+<p>If you do not complete verification within 24 hours, access to your account may be restricted.</p>
+
+<p>Microsoft 365 Security Team</p>
+</body>
+</html>
