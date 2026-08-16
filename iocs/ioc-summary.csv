@@ -1,0 +1,5 @@
+Case_ID,IOC_Type,Indicator,Verdict,Confidence,Reason
+CASE-01,Domain,security-verify[.]example,Suspicious,High,Deceptive login domain
+CASE-01,URL,hxxps://login.microsoftonline.com.security-verify[.]example/login,Suspicious,High,Credential phishing URL
+CASE-01,IP,198.51.100.25,Suspicious,Medium,Simulated sending IP
+CASE-01,Email,microsoft-security[@]example[.]net,Suspicious,High,Reply-To differs from claimed organization
