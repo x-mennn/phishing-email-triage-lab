@@ -1,0 +1,38 @@
+From: Microsoft 365 Support <support@microsoft-security.example>
+To: analyst@company.example
+Subject: Action Required: Microsoft 365 Security Verification
+Date: Mon, 17 Aug 2026 09:18:42 +0000
+Reply-To: support@microsoft-security.example
+Return-Path: <bounce@microsoft-security.example>
+Message-ID: <20260817091842.34567@microsoft-security.example>
+
+Received: from mail.microsoft-security.example (192.0.2.40)
+    by mx.company.example with ESMTPS id DEF456
+    for <analyst@company.example>;
+    Mon, 17 Aug 2026 09:18:43 +0000
+
+Authentication-Results: mx.company.example;
+    spf=pass smtp.mailfrom=microsoft-security.example;
+    dkim=pass header.d=microsoft-security.example;
+    dmarc=pass header.from=microsoft-security.example
+
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<body>
+<p>Hello,</p>
+
+<p>Our security team detected a configuration issue affecting your Microsoft 365 account.</p>
+
+<p>Please review your security settings immediately to prevent interruption of your account.</p>
+
+<p>
+<a href="https://microsoft-security.example/account/verify">
+Review Security Settings
+</a>
+</p>
+
+<p>Microsoft 365 Support Team</p>
+</body>
+</html>
