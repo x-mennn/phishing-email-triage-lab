@@ -1,0 +1,10 @@
+INVOICE NOTICE
+
+Invoice Number: INV-2026-0816
+Vendor: Vendor Example
+Amount Due: $2,450.00
+Due Date: 30 August 2026
+
+This file is a harmless cybersecurity training artifact.
+
+No executable code or malicious content is present.

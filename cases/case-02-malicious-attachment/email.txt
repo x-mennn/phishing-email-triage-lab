@@ -1,0 +1,30 @@
+From: Accounts Payable <accounts-payable@vendor-example.example>
+To: analyst@company.example
+Subject: Urgent: Outstanding Invoice - Payment Required
+Date: 16 Aug 2026 10:15:32 UTC
+Reply-To: billing@vendor-example.example
+Return-Path: <bounce@vendor-example.example>
+Message-ID: <20260816101532.67890@vendor-example.example>
+
+Received: from workstation.vendor-example.example (192.0.2.50)
+    by mail.vendor-example.example
+    with ESMTP;
+    16 Aug 2026 10:15:30 UTC
+
+Authentication-Results:
+    spf=pass
+    dkim=pass
+    dmarc=pass
+
+Hello,
+
+Please find the outstanding invoice attached to this email.
+
+The invoice requires immediate review to avoid delays in payment processing.
+
+Attachment:
+Invoice_2026_0816.txt
+
+Regards,
+Accounts Payable
+Vendor Example
