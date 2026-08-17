@@ -1,0 +1,46 @@
+From: Finance Department <finance@acme-supplies.example>
+To: accounts-payable@company.example
+Reply-To: payments@acme-supplies-finance.example
+Subject: URGENT: Updated Bank Details - Payment Required Today
+Date: Mon, 17 Aug 2026 09:14:22 +0000
+Message-ID: <20260817091422.4F8A2B@acme-supplies.example>
+Received: from mail.acme-supplies.example (192.0.2.50)
+    by mail.company.example with ESMTP id 7H92K1
+    for <accounts-payable@company.example>;
+    Mon, 17 Aug 2026 09:14:25 +0000
+Authentication-Results: mail.company.example;
+    spf=pass smtp.mailfrom=acme-supplies.example;
+    dkim=pass header.d=acme-supplies.example;
+    dmarc=pass header.from=acme-supplies.example
+
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Accounts Payable Team,
+
+Please be advised that our banking information has recently been
+updated due to an internal finance system migration.
+
+For the outstanding invoice INV-88421, please use the new bank
+account details provided below for today's payment.
+
+This payment is time-sensitive and must be completed before
+5:00 PM today to avoid disruption to the account.
+
+New beneficiary:
+Acme Supplies Finance Department
+
+Account Number: 000123456789
+Routing Number: 021000021
+
+Please reply directly to payments@acme-supplies-finance.example
+once the payment has been processed.
+
+Do not use the previous banking information associated with
+our account, as it is no longer active.
+
+Thank you,
+
+Sarah Mitchell
+Finance Department
+Acme Supplies
