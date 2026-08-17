@@ -1,0 +1,36 @@
+From: Billing Team <billing@northstar-services.example>
+To: accounts-payable@company.example
+Reply-To: billing@northstar-services.example
+Subject: Action Required: Invoice Available for Review
+Date: Mon, 17 Aug 2026 10:32:18 +0000
+Message-ID: <20260817103218.8B72C1@northstar-services.example>
+Received: from mail.northstar-services.example (192.0.2.80)
+    by mail.company.example with ESMTP id 9K42M7
+    for <accounts-payable@company.example>;
+    Mon, 17 Aug 2026 10:32:21 +0000
+Authentication-Results: mail.company.example;
+    spf=pass smtp.mailfrom=northstar-services.example;
+    dkim=pass header.d=northstar-services.example;
+    dmarc=pass header.from=northstar-services.example
+
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Accounts Payable Team,
+
+Your monthly service invoice is now available for review.
+
+Please review the attached invoice and process the payment according
+to your normal accounts-payable procedures.
+
+Invoice Number: NS-2026-0817
+Invoice Amount: $1,250.00
+Payment Due Date: 31 August 2026
+
+If you have any questions regarding this invoice, please contact
+our billing team at billing@northstar-services.example.
+
+Thank you,
+
+Northstar Services
+Billing Department
