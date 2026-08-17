@@ -72,7 +72,7 @@ Initial assessment:
 
 ```text
 192.0.2.50 → mail.vendor-example.example
-
+```
 
 
 
@@ -84,7 +84,7 @@ The simulated email contains the following authentication results:
 SPF: Pass
 DKIM: Pass
 DMARC: Pass
-
+```
 
 
 
@@ -201,4 +201,4 @@ The message uses an urgent payment-related request and includes an invoice-theme
 
 The attachment was confirmed to be a harmless training artifact, and no malware was executed during the investigation.
 
-The available evidence supports a suspicious classification rather than a confirmed malicious verdict.
+The available evidence supports a suspicious classification rather than a confirmed malicious verdict.`
