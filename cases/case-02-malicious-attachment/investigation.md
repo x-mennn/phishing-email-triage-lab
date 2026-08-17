@@ -1,5 +1,5 @@
 # Case 02 - Malicious Attachment
-
+---
 
 ## 1. Initial Triage
 
@@ -36,7 +36,7 @@ Initial assessment:
 `Suspicious - further investigation required.`
 
 
-
+---
 
 ## 2. Email Header Analysis
 
@@ -74,7 +74,7 @@ Initial assessment:
 192.0.2.50 → mail.vendor-example.example
 ```
 
-
+---
 
 ## 3. Email Authentication
 
@@ -86,7 +86,7 @@ DKIM: Pass
 DMARC: Pass
 ```
 
-
+---
 
 ## 4. Attachment Analysis
 
@@ -122,13 +122,13 @@ The attachment was not executed as code.
 
 
 
-
+---
 
 ## 5. File Hash Investigation
 
 SHA-256:
 
-C13CD71FE84A8A0254ECCCE587C31113EFBED91FE33CD30A64DF9794796AF992
+'C13CD71FE84A8A0254ECCCE587C31113EFBED91FE33CD30A64DF9794796AF992'
 
 The SHA-256 hash was calculated locally using PowerShell.
 
@@ -139,19 +139,19 @@ Threat-intelligence reputation lookup:
 Not yet investigated.
 
 
-
+---
 
 ## 6. IOC Extraction
 
 | IOC Type | Indicator | Verdict | Confidence | Reason |
 |---|---|---|---|---|
-| Email | billing[@]vendor-example[.]example | Suspicious | Medium | Reply-To address associated with the simulated sender |
+| Email | billing[@]vendor-example[.]example | Suspicious | Medium | Reply-To address associated with the invoice communication and retained as an investigation IOC |
 | IP | 192.0.2.50 | Suspicious | Medium | Simulated sending IP |
 | Filename | Invoice_2026_0816.txt | Suspicious | Medium | Invoice-themed attachment delivered through an urgent payment request |
 | SHA-256 | C13CD71FE84A8A0254ECCCE587C31113EFBED91FE33CD30A64DF9794796AF992 | Suspicious | Medium | Hash uniquely identifies the analyzed attachment |
 
 
-
+---
 
 ## 7. Risk Assessment
 
@@ -178,7 +178,7 @@ Evidence:
 The email is classified as suspicious because it combines an urgent payment request with an attachment. However, the available evidence does not support classifying the attachment as actual malware.
 
 
-
+---
 
 ## 8. Recommended SOC Response
 
@@ -191,7 +191,7 @@ The email is classified as suspicious because it combines an urgent payment requ
 - Escalate for further investigation if additional suspicious indicators are identified.
 
 
-
+---
 
 ## 9. Analyst Conclusion
 
@@ -201,4 +201,4 @@ The message uses an urgent payment-related request and includes an invoice-theme
 
 The attachment was confirmed to be a harmless training artifact, and no malware was executed during the investigation.
 
-The available evidence supports a suspicious classification rather than a confirmed malicious verdict.`
+The available evidence supports a suspicious classification rather than a confirmed malicious verdict.

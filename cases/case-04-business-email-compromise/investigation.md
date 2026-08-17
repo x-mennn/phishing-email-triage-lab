@@ -4,15 +4,15 @@
 
 ### Email Summary
 
-| Field                  | Details                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| Sender                 | Sarah Mitchell <[finance@acme-supplies.example](mailto:finance@acme-supplies.example)>  |
-| Recipient              | [accounts-payable@company.example](mailto:accounts-payable@company.example)             |
-| Reply-To               | [payments@acme-supplies-finance.example](mailto:payments@acme-supplies-finance.example) |
-| Subject                | URGENT: Updated Bank Details - Payment Required Today                                   |
-| Date                   | 17 August 2026                                                                          |
-| Email Type             | Business Email Compromise (BEC)                                                         |
-| Initial Classification | Suspicious                                                                              |
+| Field | Details |
+|---|---|
+| Sender | Finance Department <finance@acme-supplies.example> |
+| Recipient | accounts-payable@company.example |
+| Reply-To | payments@acme-supplies-finance.example |
+| Subject | URGENT: Updated Bank Details - Payment Required Today |
+| Date | 17 August 2026 |
+| Email Type | Business Email Compromise (BEC) |
+| Initial Classification | Suspicious |                                                                           |
 
 ### Initial Indicators
 
@@ -226,16 +226,17 @@ The domains are therefore treated as suspicious indicators within the overall BE
 
 ---
 
+
 ## 7. IOC Extraction
 
-| IOC Type | Indicator                                                                               | Confidence | Description                                         |
-| -------- | --------------------------------------------------------------------------------------- | ---------- | --------------------------------------------------- |
-| Email    | [finance@acme-supplies.example](mailto:finance@acme-supplies.example)                   | Medium     | Simulated sender address used in the BEC email      |
-| Email    | [payments@acme-supplies-finance.example](mailto:payments@acme-supplies-finance.example) | High       | Suspicious Reply-To address                         |
-| Domain   | acme-supplies.example                                                                   | Medium     | Sender domain                                       |
-| Domain   | acme-supplies-finance.example                                                           | High       | Reply-To domain associated with the payment request |
-| IP       | 192.0.2.50                                                                              | Medium     | Simulated sending IP                                |
-| Invoice  | INV-88421                                                                               | Low        | Invoice identifier referenced by the email          |
+| IOC Type | Indicator | Verdict | Confidence | Reason |
+|---|---|---|---|---|
+| Email | finance[@]acme-supplies[.]example | Suspicious | Medium | Simulated sender used in BEC payment request |
+| Email | payments[@]acme-supplies-finance[.]example | Suspicious | High | Suspicious Reply-To address used for payment communication |
+| Domain | acme-supplies[.]example | Suspicious | Medium | Sender domain associated with simulated BEC email |
+| Domain | acme-supplies-finance[.]example | Suspicious | High | Separate Reply-To domain associated with payment request |
+| IP | 192.0.2.50 | Suspicious | Medium | Simulated sending IP |
+| Invoice | INV-88421 | Suspicious | Medium | Invoice identifier associated with the simulated payment-fraud request |
 
 All indicators are part of a simulated cybersecurity training environment.
 

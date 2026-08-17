@@ -1,5 +1,7 @@
 # Case 03 - Domain Impersonation
 
+---
+
 ## 1. Initial Triage
 
 Sender:
@@ -38,7 +40,7 @@ Initial assessment:
 
 `Suspicious - potential domain impersonation. Further investigation required.`
 
-
+---
 
 ## 2. Email Header Analysis
 
@@ -75,18 +77,22 @@ Initial assessment:
 ```text
 192.0.2.40 → mail.microsoft-security.example → mx.company.example
 ```
+
 ### Sending IP
 
-192.0.2.40
+`192.0.2.40`
 
-Mail Server
+### Mail Server
 
-mail.microsoft-security.example
+`mail.microsoft-security.example`
 
-Authentication Results
+### Authentication Results
+
+```text
 SPF: Pass
 DKIM: Pass
 DMARC: Pass
+```
 
 The email authentication results indicate that the simulated message passed SPF, DKIM, and DMARC checks.
 
@@ -94,6 +100,7 @@ However, successful authentication does not establish that the sender domain rep
 
 Further domain analysis is required.
 
+---
 
 ## 3. Domain Analysis
 
@@ -117,6 +124,7 @@ Domain assessment:
 
 The SPF, DKIM, and DMARC results passed for `microsoft-security.example`. This indicates that the email was authenticated for the domain it was sent from, but it does not establish that the domain itself legitimately belongs to Microsoft.
 
+---
 
 ## 4. URL Analysis
 
@@ -152,17 +160,18 @@ Conclusion:
 
 `The URL is a phishing indicator because the destination domain does not legitimately represent Microsoft despite using Microsoft-related branding.`
 
+---
 
 ## 5. IOC Extraction
 
 | IOC Type | Indicator | Verdict | Confidence | Reason |
 |---|---|---|---|---|
-| Domain | microsoft-security.example | Suspicious | High | Uses Microsoft-related branding but does not represent Microsoft's legitimate domain |
-| URL | https://microsoft-security.example/account/verify | Suspicious | High | Points to a Microsoft-branded lookalike domain and requests account verification |
-| Email | support@microsoft-security.example | Suspicious | High | Sender uses the same misleading Microsoft-branded domain |
+| Email | support[@]microsoft-security[.]example | Suspicious | High | Sender uses the same misleading Microsoft-branded domain |
+| Domain | microsoft-security[.]example | Suspicious | High | Uses Microsoft-related branding but does not represent Microsoft's legitimate domain |
+| URL | hxxps://microsoft-security[.]example/account/verify | Suspicious | High | Points to a Microsoft-branded lookalike domain and requests account verification |
 | IP | 192.0.2.40 | Suspicious | Medium | Simulated sending IP associated with the suspicious domain |
 
-
+---
 
 ## 6. Risk Assessment
 
@@ -190,6 +199,7 @@ The email is classified as a high-severity domain impersonation phishing attempt
 
 The authentication results indicate that the message was authenticated for the sending domain, but the sending domain itself is not legitimate Microsoft infrastructure.
 
+---
 
 ## 7. Recommended SOC Response
 
@@ -202,6 +212,7 @@ The authentication results indicate that the message was authenticated for the s
 - Preserve the original email and relevant headers as evidence.
 - Add the identified domain and URL to the organization's threat-intelligence and detection records.
 
+---
 
 ## 8. Analyst Conclusion
 

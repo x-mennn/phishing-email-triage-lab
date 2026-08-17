@@ -1,4 +1,5 @@
 # Case 01 - Credential Phishing
+---
 
 ## 1. Initial Triage
 
@@ -20,7 +21,7 @@ Microsoft 365
 ### Initial Suspicion
 Urgent account-verification request with a suspicious sender/reply-to combination and login URL.
 
-
+---
 
 ## 2. Email Header Analysis
 
@@ -48,7 +49,7 @@ microsoft-security@example.net
 - mail.example.com
 - mx.company.example
 
-
+---
 
 ## 3. Email Authentication
 
@@ -61,7 +62,7 @@ Fail
 ### DMARC
 Fail
 
-
+---
 
 ## 4. URL Analysis
 
@@ -78,7 +79,7 @@ security-verify.example
 Not yet investigated
 
 
-
+---
 
 ## 5. Domain/IP Investigation
 
@@ -98,7 +99,7 @@ Not applicable. `198.51.100.0/24` is reserved for documentation.
 No live reputation lookup performed because the indicators are simulated.
 
 
-
+---
 
 ## 6. IOC Extraction
 
@@ -110,7 +111,7 @@ No live reputation lookup performed because the indicators are simulated.
 | Email | microsoft-security[@]example[.]net | Suspicious | Reply-To differs from claimed organization |
 
 
-
+---
 
 ## 7. Risk Assessment
 
@@ -126,7 +127,7 @@ High
 - Login URL uses a deceptive domain structure.
 - Email uses urgency to encourage immediate account verification.
 
-
+---
 
 ## 8. Recommended SOC Response
 
@@ -137,7 +138,7 @@ High
 - Reset compromised credentials if required.
 - Escalate confirmed compromise to the incident response team.
 
-
+---
 
 ## 9. Analyst Conclusion
 
