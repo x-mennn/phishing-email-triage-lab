@@ -3,3 +3,23 @@ CASE-01,Domain,security-verify[.]example,Suspicious,High,Deceptive login domain
 CASE-01,URL,hxxps://login.microsoftonline.com.security-verify[.]example/login,Suspicious,High,Credential phishing URL
 CASE-01,IP,198.51.100.25,Suspicious,Medium,Simulated sending IP
 CASE-01,Email,microsoft-security[@]example[.]net,Suspicious,High,Reply-To differs from claimed organization
+CASE-02,Email,billing[@]vendor-example[.]example,Suspicious,Medium,Reply-To address associated with the simulated sender
+CASE-02,IP,192.0.2.50,Suspicious,Medium,Simulated sending IP
+CASE-02,Filename,Invoice_2026_0816.txt,Suspicious,Medium,Invoice-themed attachment delivered through an urgent payment request
+CASE-02,SHA-256,C13CD71FE84A8A0254ECCCE587C31113EFBED91FE33CD30A64DF9794796AF992,Suspicious,Medium,Hash uniquely identifies the analyzed attachment
+CASE-03,Email,support[@]microsoft-security[.]example,Suspicious,High,Sender address uses an impersonating domain
+CASE-03,Domain,microsoft-security[.]example,Suspicious,High,Microsoft impersonation domain
+CASE-03,URL,hxxps://microsoft-security[.]example/account/verify,Suspicious,High,Credential verification URL hosted on impersonating domain
+CASE-03,IP,192.0.2.40,Suspicious,Medium,Simulated sending IP
+CASE-04,Email,finance[@]acme-supplies[.]example,Suspicious,Medium,Simulated sender used in BEC payment request
+CASE-04,Email,payments[@]acme-supplies-finance[.]example,Suspicious,High,Suspicious Reply-To address used for payment communication
+CASE-04,Domain,acme-supplies[.]example,Suspicious,Medium,Sender domain associated with simulated BEC email
+CASE-04,Domain,acme-supplies-finance[.]example,Suspicious,High,Separate Reply-To domain associated with payment request
+CASE-04,IP,192.0.2.50,Suspicious,Medium,Simulated sending IP
+CASE-04,Invoice,INV-88421,Suspicious,Medium,Invoice identifier associated with simulated payment-fraud request
+CASE-05,Email,billing[@]northstar-services[.]example,Benign,Low,Legitimate-looking billing sender with matching Reply-To
+CASE-05,Domain,northstar-services[.]example,Benign,Low,Sender and Reply-To use the same domain
+CASE-05,IP,192.0.2.80,Benign,Low,Simulated sending IP associated with benign training email
+CASE-05,Invoice,NS-2026-0817,Benign,Low,Invoice identifier from benign simulated billing notification
+
+
