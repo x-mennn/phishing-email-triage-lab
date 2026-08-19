@@ -327,6 +327,6 @@ All simulated indicators, domains, IP addresses, email addresses, attachments, a
 
 ## Contact
 
-Github: https://github.com/x-mennn
-Linkedin: https://www.linkedin.com/in/vinay-kundu-01602332a/
-Email: vinaykundu3007@gmail.com
+**Github:** https://github.com/x-mennn
+**Linkedin:** https://www.linkedin.com/in/vinay-kundu-01602332a/
+**Email:** vinaykundu3007@gmail.com
