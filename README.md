@@ -80,6 +80,15 @@ Analyst Documentation
 The workflow is designed to demonstrate how multiple pieces of evidence should be evaluated together before making a final classification.
 
 ---
+## Investigation Workflow
+
+The investigation process used throughout the lab follows a structured workflow:
+
+![Phishing Email Investigation Workflow](screenshots/phishing-email-investigation-workflow.png)
+
+---
+
+
 
 ## Investigated Cases
 
@@ -313,3 +322,11 @@ It is intended as a cybersecurity portfolio project for demonstrating foundation
 This project is intended for educational and defensive cybersecurity training purposes only.
 
 All simulated indicators, domains, IP addresses, email addresses, attachments, and investigation scenarios are provided for controlled training and documentation purposes.
+
+---
+
+## Contact
+
+Github: https://github.com/x-mennn
+Linkedin: https://www.linkedin.com/in/vinay-kundu-01602332a/
+Email: vinaykundu3007@gmail.com
